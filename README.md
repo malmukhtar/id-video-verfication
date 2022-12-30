@@ -12,3 +12,8 @@ This script works on verifying the provided ID against a live feed (cam) or reco
 ```bash
 $ python main.py path_to_ID path_to_video *Tolerance(optional)*
 ```
+## Supported files
+### Images 
+All images are supported and the script convert them all to jpg.
+### Videos
+Only MP4 formate is tested for now.
