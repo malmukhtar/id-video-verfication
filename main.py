@@ -72,11 +72,7 @@ def main():
         else:
             print("Unsupported video format")
         
-
-
-
-
-# This function will take an image and return its face encodings using the neural network
+        
 def getFaceEncodings(path_to_image):
     # Load image using scipy
     image = imageio.v2.imread(path_to_image)
@@ -95,7 +91,7 @@ def getFaceEncodings(path_to_image):
     # For every face detected, compute the face encodings
     return([np.array(faceRecognitionModel.compute_face_descriptor(image, face, 1)) for face in faces])
 
-# This function takes a list of known faces
+
 def compareFaceEncodings(id, face):
     # Finds the difference between each known face and the given face (that we are comparing)
     return (np.linalg.norm(np.array(id) - np.array(face), axis=1) <= TOLERANCE)
