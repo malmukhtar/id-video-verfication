@@ -99,8 +99,6 @@ def compareFaceEncodings(id, face):
 
 
 
-argv = sys.argv[1:]
-
 if __name__ == "__main__":
 
     # Start point
